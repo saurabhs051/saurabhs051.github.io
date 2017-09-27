@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body id='bdy'>
+
+<h2 id="d">My First JavaScript</h2>
+<br>
+New Text
+<br>
+<p><img  id="demo" src="abc.jpg" style="width:640px" onclick="chng()"></p>
+<br>
+<button type="button" onclick="chng1()">Click me</button>
+<script type="text/javascript">
+	function chng()
+	{
+		var image=document.getElementById('demo');
+		if(image.src.match("abc"))
+			image.src='def.jpg';
+		else
+			image.src='abc.jpg';
+	}
+	function chng1()
+	{
+		var fnt=document.getElementById('bdy');
+		if(fnt.style.background=='grey')
+			fnt.style.background='yellow';
+		else if(fnt.style.background!='red')
+			fnt.style.background='red';
+		else if(fnt.style.background=='red')
+			fnt.style.background='grey';
+	}
+	</script>
+	<a href="index.php">Click</a>
+
+</body>
+</html> 
